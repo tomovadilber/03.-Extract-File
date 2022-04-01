@@ -1,0 +1,31 @@
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+
+
+namespace AssociativeArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            List<string> names = Console.ReadLine().Split('\\', StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            List<string> files = names[names.Count -1].Split('.', StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            string fileName = files[0];
+            string extension = files[1];
+
+            
+                Console.WriteLine($"File name: {fileName}");
+                Console.WriteLine($"File extension: {extension}");
+            
+
+        }
+    }
+}
